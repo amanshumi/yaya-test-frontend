@@ -23,7 +23,11 @@ const Transactions = () => {
     })
 
     try {
-      const response = await axios.get(`http://localhost:8070/api/v1/transaction/search?page=${page}&param=${val}`);
+      const response = await axios.get(`http://localhost:8070/api/v1/transaction/search?page=${page}&param=${val}`, {
+        headers: {
+          "x-api-key": "2feb66e8-rgmj-8486-rc2v-442781e60fe6"
+        }
+      });
       
       setTransactions({
         loading: false,
@@ -48,7 +52,11 @@ const Transactions = () => {
   useEffect(() => {
     const fetchTransactions = async () => {
       try {
-        const response = await axios.get(`http://localhost:8070/api/v1/transaction/get?page=${page}`);
+        const response = await axios.get(`http://localhost:8070/api/v1/transaction/get?page=${page}`, {
+          headers: {
+            "x-api-key": "2feb66e8-rgmj-8486-rc2v-442781e60fe6"
+          }
+        });
         setTransactions({
           loading: false,
           error: "",
