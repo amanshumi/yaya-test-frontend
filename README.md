@@ -1,0 +1,1 @@
+# YaYa Wallet Test - Frontend
