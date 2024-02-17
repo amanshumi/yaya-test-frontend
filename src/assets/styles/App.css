@@ -79,10 +79,12 @@ h1, h2, h3, h4, h5, h6, p, a, link, th, td, span{
   border-radius: 50%;
 }
 
-th{
+thead{
   background-color: #073287;
-  color: #FFFFFF !important;
-  
+}
+
+th{
+  color: #FFFFFF !important;;
 }
 
 input{
